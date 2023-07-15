@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB2BBAA02A6248560022B89D /* BuyingKindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBA9F2A6248560022B89D /* BuyingKindTests.swift */; };
+		AB2BBAA22A62489C0022B89D /* ListingKindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAA12A62489C0022B89D /* ListingKindTests.swift */; };
+		AB2BBAA42A6248E90022B89D /* SellerLevelKindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAA32A6248E90022B89D /* SellerLevelKindTests.swift */; };
+		AB2BBAA62A6249280022B89D /* SellerPowerKindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAA52A6249280022B89D /* SellerPowerKindTests.swift */; };
+		AB2BBAA92A6249780022B89D /* ShippingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAA82A6249780022B89D /* ShippingModelTests.swift */; };
+		AB2BBAAB2A624A440022B89D /* TransactionsModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAAA2A624A440022B89D /* TransactionsModelTests.swift */; };
 		ABA9A22A2A5F8CE4005D8BE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A2292A5F8CE4005D8BE0 /* AppDelegate.swift */; };
 		ABA9A22C2A5F8CE4005D8BE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A22B2A5F8CE4005D8BE0 /* SceneDelegate.swift */; };
 		ABA9A2332A5F8CE5005D8BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA9A2322A5F8CE5005D8BE0 /* Assets.xcassets */; };
@@ -90,6 +96,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB2BBA9F2A6248560022B89D /* BuyingKindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingKindTests.swift; sourceTree = "<group>"; };
+		AB2BBAA12A62489C0022B89D /* ListingKindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingKindTests.swift; sourceTree = "<group>"; };
+		AB2BBAA32A6248E90022B89D /* SellerLevelKindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerLevelKindTests.swift; sourceTree = "<group>"; };
+		AB2BBAA52A6249280022B89D /* SellerPowerKindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerPowerKindTests.swift; sourceTree = "<group>"; };
+		AB2BBAA82A6249780022B89D /* ShippingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingModelTests.swift; sourceTree = "<group>"; };
+		AB2BBAAA2A624A440022B89D /* TransactionsModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModelTests.swift; sourceTree = "<group>"; };
 		ABA9A2262A5F8CE4005D8BE0 /* Ecommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA9A2292A5F8CE4005D8BE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA9A22B2A5F8CE4005D8BE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +195,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB2BBA9B2A62481C0022B89D /* Feature Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBA9C2A62483D0022B89D /* Search Feature Interface */,
+			);
+			path = "Feature Interfaces";
+			sourceTree = "<group>";
+		};
+		AB2BBA9C2A62483D0022B89D /* Search Feature Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBA9D2A6248400022B89D /* Data */,
+			);
+			path = "Search Feature Interface";
+			sourceTree = "<group>";
+		};
+		AB2BBA9D2A6248400022B89D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBA9E2A62484F0022B89D /* Kinds */,
+				AB2BBAA72A62496E0022B89D /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AB2BBA9E2A62484F0022B89D /* Kinds */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBA9F2A6248560022B89D /* BuyingKindTests.swift */,
+				AB2BBAA12A62489C0022B89D /* ListingKindTests.swift */,
+				AB2BBAA32A6248E90022B89D /* SellerLevelKindTests.swift */,
+				AB2BBAA52A6249280022B89D /* SellerPowerKindTests.swift */,
+			);
+			path = Kinds;
+			sourceTree = "<group>";
+		};
+		AB2BBAA72A62496E0022B89D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBAA82A6249780022B89D /* ShippingModelTests.swift */,
+				AB2BBAAA2A624A440022B89D /* TransactionsModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ABA9A21D2A5F8CE4005D8BE0 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +279,7 @@
 			children = (
 				ABA9A2792A61FFBC005D8BE0 /* API */,
 				ABA9A2E82A623FC4005D8BE0 /* Common */,
+				AB2BBA9B2A62481C0022B89D /* Feature Interfaces */,
 				ABA9A3022A62421E005D8BE0 /* Features */,
 				ABA9A2662A5F8FF6005D8BE0 /* Networking */,
 				ABA9A2872A62188E005D8BE0 /* Vendors */,
@@ -767,18 +825,24 @@
 				ABA9A3012A624130005D8BE0 /* MockSearchRepository.swift in Sources */,
 				ABA9A2FA2A6240C8005D8BE0 /* MockNetworkingProvider.swift in Sources */,
 				ABA9A2F62A6240AB005D8BE0 /* Mockable.swift in Sources */,
+				AB2BBAAB2A624A440022B89D /* TransactionsModelTests.swift in Sources */,
 				ABA9A26A2A5F9020005D8BE0 /* HTTPMethodTests.swift in Sources */,
 				ABA9A2F42A6240AB005D8BE0 /* Invocable.swift in Sources */,
 				ABA9A2F72A6240AB005D8BE0 /* AssociatedKeys.swift in Sources */,
 				ABA9A2FD2A6240F1005D8BE0 /* XCTestCase+XCTAssertThrowsAsyncError.swift in Sources */,
 				ABA9A28E2A62192A005D8BE0 /* Helper+Utils.swift in Sources */,
 				ABA9A2862A621869005D8BE0 /* SearchDTOTests.swift in Sources */,
+				AB2BBAA22A62489C0022B89D /* ListingKindTests.swift in Sources */,
 				ABA9A28A2A6218AB005D8BE0 /* Helper.swift in Sources */,
 				ABA9A3062A624256005D8BE0 /* ConcreteSearchRepositoryTests.swift in Sources */,
 				ABA9A2EB2A623FE3005D8BE0 /* IdentifierTypeTests.swift in Sources */,
+				AB2BBAA92A6249780022B89D /* ShippingModelTests.swift in Sources */,
+				AB2BBAA42A6248E90022B89D /* SellerLevelKindTests.swift in Sources */,
 				ABA9A2692A5F9020005D8BE0 /* RequestErrorTests.swift in Sources */,
 				ABA9A27B2A61FFDF005D8BE0 /* EcommerceAPITests.swift in Sources */,
 				ABA9A2F52A6240AB005D8BE0 /* Stubbable.swift in Sources */,
+				AB2BBAA62A6249280022B89D /* SellerPowerKindTests.swift in Sources */,
+				AB2BBAA02A6248560022B89D /* BuyingKindTests.swift in Sources */,
 				ABA9A3092A62435F005D8BE0 /* Helper+Models.swift in Sources */,
 				ABA9A28C2A6218EE005D8BE0 /* Helper+DTOs.swift in Sources */,
 			);
