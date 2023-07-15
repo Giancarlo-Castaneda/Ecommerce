@@ -18,7 +18,7 @@ public extension RequestType {
     }
 
     var host: String {
-         "localhost"
+         "api.mercadolibre.com"
     }
 
     var header: [String: String] {
