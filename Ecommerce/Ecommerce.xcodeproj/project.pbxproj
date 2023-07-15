@@ -13,6 +13,10 @@
 		AB2BBAA62A6249280022B89D /* SellerPowerKindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAA52A6249280022B89D /* SellerPowerKindTests.swift */; };
 		AB2BBAA92A6249780022B89D /* ShippingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAA82A6249780022B89D /* ShippingModelTests.swift */; };
 		AB2BBAAB2A624A440022B89D /* TransactionsModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAAA2A624A440022B89D /* TransactionsModelTests.swift */; };
+		AB2BBAAF2A624C710022B89D /* SearchFetchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAAE2A624C710022B89D /* SearchFetchWorker.swift */; };
+		AB2BBAB32A624CD90022B89D /* MockSearchFetchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAB22A624CD90022B89D /* MockSearchFetchWorker.swift */; };
+		AB2BBAB72A624D9C0022B89D /* ConcreteSearchFetchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBAB62A624D9C0022B89D /* ConcreteSearchFetchWorker.swift */; };
+		AB2BBABB2A624E170022B89D /* ConcreteSearchFetchWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBABA2A624E170022B89D /* ConcreteSearchFetchWorkerTests.swift */; };
 		ABA9A22A2A5F8CE4005D8BE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A2292A5F8CE4005D8BE0 /* AppDelegate.swift */; };
 		ABA9A22C2A5F8CE4005D8BE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A22B2A5F8CE4005D8BE0 /* SceneDelegate.swift */; };
 		ABA9A2332A5F8CE5005D8BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA9A2322A5F8CE5005D8BE0 /* Assets.xcassets */; };
@@ -102,6 +106,10 @@
 		AB2BBAA52A6249280022B89D /* SellerPowerKindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerPowerKindTests.swift; sourceTree = "<group>"; };
 		AB2BBAA82A6249780022B89D /* ShippingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingModelTests.swift; sourceTree = "<group>"; };
 		AB2BBAAA2A624A440022B89D /* TransactionsModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModelTests.swift; sourceTree = "<group>"; };
+		AB2BBAAE2A624C710022B89D /* SearchFetchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFetchWorker.swift; sourceTree = "<group>"; };
+		AB2BBAB22A624CD90022B89D /* MockSearchFetchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchFetchWorker.swift; sourceTree = "<group>"; };
+		AB2BBAB62A624D9C0022B89D /* ConcreteSearchFetchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteSearchFetchWorker.swift; sourceTree = "<group>"; };
+		AB2BBABA2A624E170022B89D /* ConcreteSearchFetchWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteSearchFetchWorkerTests.swift; sourceTree = "<group>"; };
 		ABA9A2262A5F8CE4005D8BE0 /* Ecommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA9A2292A5F8CE4005D8BE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA9A22B2A5F8CE4005D8BE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +246,70 @@
 				AB2BBAAA2A624A440022B89D /* TransactionsModelTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AB2BBAAC2A624C4D0022B89D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBAAD2A624C550022B89D /* Workers */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		AB2BBAAD2A624C550022B89D /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBAAE2A624C710022B89D /* SearchFetchWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		AB2BBAB02A624CBE0022B89D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBAB12A624CCD0022B89D /* Workers */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		AB2BBAB12A624CCD0022B89D /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBAB22A624CD90022B89D /* MockSearchFetchWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		AB2BBAB42A624D890022B89D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBAB52A624D910022B89D /* Workers */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		AB2BBAB52A624D910022B89D /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBAB62A624D9C0022B89D /* ConcreteSearchFetchWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		AB2BBAB82A624E0C0022B89D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBAB92A624E110022B89D /* Workers */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		AB2BBAB92A624E110022B89D /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BBABA2A624E170022B89D /* ConcreteSearchFetchWorkerTests.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 		ABA9A21D2A5F8CE4005D8BE0 = {
@@ -445,6 +517,7 @@
 		ABA9A2942A622749005D8BE0 /* Search Feature Interface */ = {
 			isa = PBXGroup;
 			children = (
+				AB2BBAAC2A624C4D0022B89D /* Business Logic */,
 				ABA9A2952A622755005D8BE0 /* Data */,
 				ABA9A2C12A6235C2005D8BE0 /* Data Access */,
 			);
@@ -529,6 +602,7 @@
 		ABA9A2C62A6236C5005D8BE0 /* Search Feature */ = {
 			isa = PBXGroup;
 			children = (
+				AB2BBAB42A624D890022B89D /* Business Logic */,
 				ABA9A2C72A6236CE005D8BE0 /* Data Access */,
 			);
 			path = "Search Feature";
@@ -619,6 +693,7 @@
 		ABA9A2FE2A624113005D8BE0 /* Search Feature */ = {
 			isa = PBXGroup;
 			children = (
+				AB2BBAB02A624CBE0022B89D /* Business Logic */,
 				ABA9A2FF2A62411F005D8BE0 /* Data Access */,
 			);
 			path = "Search Feature";
@@ -643,6 +718,7 @@
 		ABA9A3032A624228005D8BE0 /* Search Feature */ = {
 			isa = PBXGroup;
 			children = (
+				AB2BBAB82A624E0C0022B89D /* Business Logic */,
 				ABA9A3042A624231005D8BE0 /* Data Access */,
 			);
 			path = "Search Feature";
@@ -764,6 +840,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2BBAAF2A624C710022B89D /* SearchFetchWorker.swift in Sources */,
 				ABA9A2642A5F8F6E005D8BE0 /* RequestError.swift in Sources */,
 				ABA9A2A82A622C86005D8BE0 /* SellerID.swift in Sources */,
 				ABA9A2CF2A623891005D8BE0 /* SaleModel+SearchDTO.swift in Sources */,
@@ -803,6 +880,7 @@
 				ABA9A2732A5F92B5005D8BE0 /* Dictionary+prettyPrintedJSONString.swift in Sources */,
 				ABA9A22C2A5F8CE4005D8BE0 /* SceneDelegate.swift in Sources */,
 				ABA9A2BC2A623061005D8BE0 /* RatingsModel.swift in Sources */,
+				AB2BBAB72A624D9C0022B89D /* ConcreteSearchFetchWorker.swift in Sources */,
 				ABA9A2652A5F8F6E005D8BE0 /* RequestType.swift in Sources */,
 				ABA9A2E32A623DC1005D8BE0 /* SellerModel+SearchDTO.swift in Sources */,
 				ABA9A2982A62279E005D8BE0 /* SearchItemID.swift in Sources */,
@@ -824,6 +902,7 @@
 			files = (
 				ABA9A3012A624130005D8BE0 /* MockSearchRepository.swift in Sources */,
 				ABA9A2FA2A6240C8005D8BE0 /* MockNetworkingProvider.swift in Sources */,
+				AB2BBABB2A624E170022B89D /* ConcreteSearchFetchWorkerTests.swift in Sources */,
 				ABA9A2F62A6240AB005D8BE0 /* Mockable.swift in Sources */,
 				AB2BBAAB2A624A440022B89D /* TransactionsModelTests.swift in Sources */,
 				ABA9A26A2A5F9020005D8BE0 /* HTTPMethodTests.swift in Sources */,
@@ -840,6 +919,7 @@
 				AB2BBAA42A6248E90022B89D /* SellerLevelKindTests.swift in Sources */,
 				ABA9A2692A5F9020005D8BE0 /* RequestErrorTests.swift in Sources */,
 				ABA9A27B2A61FFDF005D8BE0 /* EcommerceAPITests.swift in Sources */,
+				AB2BBAB32A624CD90022B89D /* MockSearchFetchWorker.swift in Sources */,
 				ABA9A2F52A6240AB005D8BE0 /* Stubbable.swift in Sources */,
 				AB2BBAA62A6249280022B89D /* SellerPowerKindTests.swift in Sources */,
 				AB2BBAA02A6248560022B89D /* BuyingKindTests.swift in Sources */,
