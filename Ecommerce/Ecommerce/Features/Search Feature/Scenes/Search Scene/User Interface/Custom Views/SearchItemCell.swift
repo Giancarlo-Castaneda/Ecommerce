@@ -1,3 +1,5 @@
+import Nuke
+import NukeExtensions
 import UIKit
 
 final class SearchItemCell: UICollectionViewCell {
@@ -113,6 +115,17 @@ final class SearchItemCell: UICollectionViewCell {
         freeShippingLabel.layout.leadingAnchor(to: imageView, offset: LayoutConstant.spacing)
     }
 
+    private func loadImage(url: URL, imageView: UIImageView) {
+        let request = ImageRequest(url: url)
+
+        var options = ImageLoadingOptions(transition: .fadeIn(duration: 0.3))
+        options.contentModes = .init(success: .scaleAspectFill,
+                                     failure: .scaleAspectFill,
+                                     placeholder: .scaleAspectFit)
+
+        NukeExtensions.loadImage(with: request, options: options, into: imageView)
+    }
+
     // MARK: - Internal Methods
 
     func configure(item: SearchItemViewModel) {
@@ -123,6 +136,7 @@ final class SearchItemCell: UICollectionViewCell {
         freeShippingLabel.text = "• Free Delivery"
         freeShippingLabel.isHidden = !item.freeShipping
         originalPriceLabel.isHidden = item.originalPrice == nil
+        loadImage(url: item.imageURL, imageView: imageView)
 
         if let originalPrice = item.originalPrice {
             let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: originalPrice)
