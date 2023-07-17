@@ -4,7 +4,7 @@ extension SellerReputationModel {
 
     init(_ dto: SearchDTO.Result.Seller.SellerReputation) {
         let levelKind = SellerLevelKind(rawValue: dto.levelId.rawValue) ?? .the5_Green
-        let powerKind = SellerPowerKind(rawValue: dto.powerSellerStatus.rawValue) ?? .gold
+        let powerKind = SellerPowerKind(rawValue: dto.powerSellerStatus?.rawValue ?? "") ?? .none
         let transaction = TransactionsModel(dto.transactions)
         let metric = MetricsModel(dto.metrics)
 
