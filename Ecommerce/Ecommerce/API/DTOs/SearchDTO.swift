@@ -223,11 +223,11 @@ public extension SearchDTO.Result.Seller {
 
     struct SellerReputation: Decodable {
         public let levelId: LevelId
-        public let powerSellerStatus: PowerSellerStatus
+        public let powerSellerStatus: PowerSellerStatus?
         public let transactions: Transactions
         public let metrics: Metrics
 
-        public init(levelId: LevelId, powerSellerStatus: PowerSellerStatus, transactions: Transactions, metrics: Metrics) {
+        public init(levelId: LevelId, powerSellerStatus: PowerSellerStatus?, transactions: Transactions, metrics: Metrics) {
             self.levelId = levelId
             self.powerSellerStatus = powerSellerStatus
             self.transactions = transactions
@@ -259,6 +259,7 @@ public extension SearchDTO.Result.Seller.SellerReputation {
     }
 
     enum PowerSellerStatus: String, Decodable {
+        case silver
         case gold
         case platinum
     }

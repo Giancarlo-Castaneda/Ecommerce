@@ -30,7 +30,10 @@ struct ConcreteSearchItemViewModel: SearchItemViewModel {
 
     var discount: String? {
         if let original = searchItem.originalPrice, searchItem.price < original {
-            return "\(Int((searchItem.price * 100) / original))%"
+            let discount = original - searchItem.price
+            let percentage = (discount * 100) / original
+            let integerPercentage = Int(percentage)
+            return "-\(integerPercentage)%"
         }
         return nil
     }

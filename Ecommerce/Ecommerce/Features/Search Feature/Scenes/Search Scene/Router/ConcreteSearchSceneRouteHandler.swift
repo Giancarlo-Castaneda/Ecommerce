@@ -17,7 +17,7 @@ final class ConcreteSearchSceneRouteHandler: RouteHandler {
     // MARK: - Internal Methods
 
     func destination(of route: SearchRoute) -> UIViewController {
-        ViewController()
+        SearchSceneFactory(searchRepository: searchRepository, routeService: routeService).build()
     }
 
     func navigate(to route: SearchRoute,
