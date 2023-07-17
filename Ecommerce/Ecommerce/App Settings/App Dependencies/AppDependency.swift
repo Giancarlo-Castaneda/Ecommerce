@@ -9,6 +9,7 @@ struct AppDependency {
     let locale: Locale
     let routeService: RouteService
     let search: Search
+    let product: Product
 }
 
 // MARK: - Resolve
@@ -49,10 +50,15 @@ extension AppDependency {
 
         let search = Search.resolve(networkingProvider: networkingProvider)
 
+        // MARK: Product
+
+        let product = Product.resolve(networkingProvider: networkingProvider)
+
         return AppDependency(networkingProvider: networkingProvider,
                              currencyFormatter: currencyFormatter,
                              locale: locale,
                              routeService: routeService,
-                             search: search)
+                             search: search,
+                             product: product)
     }
 }

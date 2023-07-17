@@ -1,6 +1,7 @@
 import Foundation
 
 public enum ListingKind: String {
+    case none
     case free
     case silver
     case gold
