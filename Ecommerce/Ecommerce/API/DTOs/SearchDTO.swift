@@ -111,11 +111,16 @@ public extension SearchDTO.Result {
 
     enum BuyingMode: String, Decodable {
         case buyItNow = "buy_it_now"
+        case classified
     }
 
     enum ListingTypeId: String, Decodable {
+        case free
+        case silver
+        case gold
         case goldPro = "gold_pro"
         case goldSpecial = "gold_special"
+        case goldPremium = "gold_premium"
     }
 
     // MARK: - Shipping
@@ -123,11 +128,11 @@ public extension SearchDTO.Result {
     struct Shipping: Decodable {
         public let storePickUp: Bool
         public let freeShipping: Bool
-        public let logisticType: String
+        public let logisticType: String?
         public let mode: String
         public let tags: [String]
 
-        public init(storePickUp: Bool, freeShipping: Bool, logisticType: String, mode: String, tags: [String]) {
+        public init(storePickUp: Bool, freeShipping: Bool, logisticType: String?, mode: String, tags: [String]) {
             self.storePickUp = storePickUp
             self.freeShipping = freeShipping
             self.logisticType = logisticType
@@ -222,12 +227,12 @@ public extension SearchDTO.Result.Seller {
     // MARK: - SellerReputation
 
     struct SellerReputation: Decodable {
-        public let levelId: LevelId
+        public let levelId: LevelId?
         public let powerSellerStatus: PowerSellerStatus?
         public let transactions: Transactions
         public let metrics: Metrics
 
-        public init(levelId: LevelId, powerSellerStatus: PowerSellerStatus?, transactions: Transactions, metrics: Metrics) {
+        public init(levelId: LevelId?, powerSellerStatus: PowerSellerStatus?, transactions: Transactions, metrics: Metrics) {
             self.levelId = levelId
             self.powerSellerStatus = powerSellerStatus
             self.transactions = transactions
@@ -256,6 +261,10 @@ public extension SearchDTO.Result.Seller.SellerReputation {
 
     enum LevelId: String, Decodable {
         case the5_Green = "5_green"
+        case the4_light_green = "4_light_green"
+        case the3_yellow = "3_yellow"
+        case the2_orange = "2_orange"
+        case the1_red = "1_red"
     }
 
     enum PowerSellerStatus: String, Decodable {
