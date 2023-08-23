@@ -93,15 +93,13 @@ public extension ProductDTO {
         public let secureUrl: URL
         public let size: String
         public let maxSize: String
-        public let quality: String
 
-        public init(id: String, url: URL, secureUrl: URL, size: String, maxSize: String, quality: String) {
+        public init(id: String, url: URL, secureUrl: URL, size: String, maxSize: String) {
             self.id = id
             self.url = url
             self.secureUrl = secureUrl
             self.size = size
             self.maxSize = maxSize
-            self.quality = quality
         }
     }
 
@@ -109,9 +107,9 @@ public extension ProductDTO {
         public let id: String
         public let name: String
         public let valueId: String?
-        public let valueName: String
+        public let valueName: String?
 
-        public init(id: String, name: String, valueId: String?, valueName: String) {
+        public init(id: String, name: String, valueId: String?, valueName: String?) {
             self.id = id
             self.name = name
             self.valueId = valueId

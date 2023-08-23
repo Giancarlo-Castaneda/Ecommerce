@@ -7,7 +7,6 @@ extension PictureModel {
                   url: dto.url,
                   secureUrl: dto.secureUrl,
                   size: dto.size,
-                  maxSize: dto.maxSize,
-                  quality: dto.quality)
+                  maxSize: dto.maxSize)
     }
 }

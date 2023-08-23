@@ -14,7 +14,7 @@ final class ConcreteProductDetailPresenter: ProductDetailInteractorOutput {
 
     func fetchedDetail(detail: ProductDetailModel) async {
         await view?.configure(title: detail.title)
-        await view?.configure(state: .content)
+        await view?.configure(state: .content(detail: detail))
     }
 
     func error(_ error: Error) async {
