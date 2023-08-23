@@ -166,6 +166,9 @@
 		ABA9A3012A624130005D8BE0 /* MockSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A3002A624130005D8BE0 /* MockSearchRepository.swift */; };
 		ABA9A3062A624256005D8BE0 /* ConcreteSearchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A3052A624256005D8BE0 /* ConcreteSearchRepositoryTests.swift */; };
 		ABA9A3092A62435F005D8BE0 /* Helper+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A3082A62435F005D8BE0 /* Helper+Models.swift */; };
+		ABEEB9EC2A96BD9B00E197A4 /* PictureCarrouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEEB9EB2A96BD9B00E197A4 /* PictureCarrouselCell.swift */; };
+		ABEEB9EE2A96BE8D00E197A4 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEEB9ED2A96BE8D00E197A4 /* UITableView+Reusable.swift */; };
+		ABEEB9F02A96BEB900E197A4 /* UITableViewCell+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEEB9EF2A96BEB900E197A4 /* UITableViewCell+Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -339,6 +342,9 @@
 		ABA9A3002A624130005D8BE0 /* MockSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchRepository.swift; sourceTree = "<group>"; };
 		ABA9A3052A624256005D8BE0 /* ConcreteSearchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteSearchRepositoryTests.swift; sourceTree = "<group>"; };
 		ABA9A3082A62435F005D8BE0 /* Helper+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+Models.swift"; sourceTree = "<group>"; };
+		ABEEB9EB2A96BD9B00E197A4 /* PictureCarrouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCarrouselCell.swift; sourceTree = "<group>"; };
+		ABEEB9ED2A96BE8D00E197A4 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		ABEEB9EF2A96BEB900E197A4 /* UITableViewCell+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -812,6 +818,7 @@
 			isa = PBXGroup;
 			children = (
 				AB679E3B2A6626D4005CF873 /* ProductDetailContentView.swift */,
+				ABEEB9EB2A96BD9B00E197A4 /* PictureCarrouselCell.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -1181,6 +1188,8 @@
 				AB89C8D62A6486CC001B5448 /* Reusable.swift */,
 				AB89C8D52A6486CB001B5448 /* UICollectionView+Reusable.swift */,
 				AB89C8D72A6486CC001B5448 /* UICollectionViewCell+Reusable.swift */,
+				ABEEB9ED2A96BE8D00E197A4 /* UITableView+Reusable.swift */,
+				ABEEB9EF2A96BEB900E197A4 /* UITableViewCell+Reusable.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -1800,6 +1809,7 @@
 				AB89C8DA2A6486CC001B5448 /* UICollectionViewCell+Reusable.swift in Sources */,
 				AB1DCBD72A64D6A700322B46 /* ProductRepository.swift in Sources */,
 				AB89C8972A64627C001B5448 /* ConcreteSearchDataProviderFactory.swift in Sources */,
+				ABEEB9EC2A96BD9B00E197A4 /* PictureCarrouselCell.swift in Sources */,
 				AB89C8CC2A648051001B5448 /* LayoutDSL+VerticalAnchor.swift in Sources */,
 				ABA9A26E2A5F928A005D8BE0 /* Logger.swift in Sources */,
 				ABA9A27E2A6202AC005D8BE0 /* SearchDTO.swift in Sources */,
@@ -1854,6 +1864,7 @@
 				AB2BBAB72A624D9C0022B89D /* ConcreteSearchFetchWorker.swift in Sources */,
 				AB89C8D02A648051001B5448 /* LayoutDSL+AbsoluteHorizontalAnchor.swift in Sources */,
 				ABA9A2652A5F8F6E005D8BE0 /* RequestType.swift in Sources */,
+				ABEEB9EE2A96BE8D00E197A4 /* UITableView+Reusable.swift in Sources */,
 				ABA9A2E32A623DC1005D8BE0 /* SellerModel+SearchDTO.swift in Sources */,
 				ABA9A2982A62279E005D8BE0 /* SearchItemID.swift in Sources */,
 				ABA9A2BE2A6230DF005D8BE0 /* SaleModel.swift in Sources */,
@@ -1861,6 +1872,7 @@
 				ABA9A2E72A623EFD005D8BE0 /* SearchModel+SearchDTO.swift in Sources */,
 				AB7376422A64F58E000472C3 /* AppDependency+Product.swift in Sources */,
 				ABA9A2C02A62316C005D8BE0 /* MetricDetailModel.swift in Sources */,
+				ABEEB9F02A96BEB900E197A4 /* UITableViewCell+Reusable.swift in Sources */,
 				AB2BBAD22A6253070022B89D /* ConcreteSearchInteractor.swift in Sources */,
 				AB89C8912A645E12001B5448 /* SearchItemViewModelFactory.swift in Sources */,
 				ABA9A2BA2A623032005D8BE0 /* TransactionsModel.swift in Sources */,
