@@ -34,7 +34,7 @@ public extension ProductDTO {
         public let shipping: SearchDTO.Result.Shipping
         public let dateCreated: Date
         public let lastUpdated: Date
-        public let warranty: String
+        public let warranty: String?
         public let pictures: [Picture]
         public let attributes: [Attribute]
 
@@ -56,7 +56,7 @@ public extension ProductDTO {
                     shipping: SearchDTO.Result.Shipping,
                     dateCreated: Date,
                     lastUpdated: Date,
-                    warranty: String,
+                    warranty: String?,
                     pictures: [Picture],
                     attributes: [Attribute]) {
 
