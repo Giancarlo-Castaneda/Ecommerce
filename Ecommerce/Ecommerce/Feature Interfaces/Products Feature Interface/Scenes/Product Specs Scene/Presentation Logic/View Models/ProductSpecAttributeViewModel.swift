@@ -1,17 +1,16 @@
 import Foundation
 
-public protocol ProductSpecHeaderViewModel: ProductSpecViewModel {
+public protocol ProductSpecAttributeViewModel: ProductSpecViewModel {
 
     // MARK: - Public Properties
 
-    var title: String { get }
-    var price: String { get }
-    var originalPrice: String? { get }
+    var name: String { get }
+    var value: String? { get }
 }
 
 // MARK: - ProductSpecsViewModelVisitor
 
-extension ProductSpecHeaderViewModel {
+extension ProductSpecAttributeViewModel {
 
     public func accept<Visitor: ProductSpecsViewModelVisitor>(visitor: Visitor) -> Visitor.ReturnValue {
         visitor.visit(self)
