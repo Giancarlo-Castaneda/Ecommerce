@@ -13,7 +13,7 @@ final class AppRouter {
         guard
             let rootViewController = window?.rootViewController
         else {
-            let navigationController = UINavigationController(nibName: nil, bundle: nil)
+            let navigationController = UINavigationController()
             navigationController.view.tintColor = AssetsColor.purple.appColor
 
             window?.rootViewController = navigationController
