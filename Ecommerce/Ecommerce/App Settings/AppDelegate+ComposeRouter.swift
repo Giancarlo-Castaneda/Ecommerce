@@ -12,5 +12,8 @@ extension AppDelegate {
 
         routeService.register(ConcreteProductDetailRouteHandler(productRepository: appDependency.product.productRepository,
                                                                 routeService: appDependency.routeService))
+
+        routeService.register(ConcreteProductSpecsRouteHandler(productRepository: appDependency.product.productRepository,
+                                                               numberFormatter: appDependency.currencyFormatter))
     }
 }
