@@ -1,3 +1,6 @@
 import Foundation
 
-public protocol ProductSpecViewModel { }
+public protocol ProductSpecViewModel {
+
+    func accept<Visitor: ProductSpecsViewModelVisitor>(visitor: Visitor) -> Visitor.ReturnValue
+}
