@@ -1,0 +1,18 @@
+/* Search Feature */
+
+"SEARCH_BAR_PLACEHOLDER" = "Busca un producto...";
+"SEARCH_EMPTY_TITLE" = "Encuentra tu producto y busca la mejor oferta";
+"SEARCH_EMPTY_BODY" = "Empieza a buscar todos los productos que quieras.";
+"SEARCH_ITEM_FREE_TAG" = "• Entrega gratis";
+"DISCOUNT_TEXT" = "-%d%%";
+
+/* Product Feature */
+
+"ATTRIBUTES_SECTION_TITLE" = "Acerca del producto";
+
+/* General Usage */
+
+"OK" = "Ok";
+"CANCEL" = "Cancelar";
+"ERROR" = "Error";
+"PRICE_NOT_FOUND_MESSAGE" = "Precio no disponible";

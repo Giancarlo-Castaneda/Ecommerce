@@ -1,0 +1,18 @@
+/* Search Feature */
+
+"SEARCH_BAR_PLACEHOLDER" = "Search a product...";
+"SEARCH_EMPTY_TITLE" = "Find your product and look for the best offer";
+"SEARCH_EMPTY_BODY" = "Start looking for all the products you want.";
+"SEARCH_ITEM_FREE_TAG" = "• Free Delivery";
+"DISCOUNT_TEXT" = "-%d%%";
+
+/* Product Feature */
+
+"ATTRIBUTES_SECTION_TITLE" = "About the product";
+
+/* General Usage */
+
+"OK" = "Ok";
+"CANCEL" = "Cancel";
+"ERROR" = "Error";
+"PRICE_NOT_FOUND_MESSAGE" = "Price not available";
