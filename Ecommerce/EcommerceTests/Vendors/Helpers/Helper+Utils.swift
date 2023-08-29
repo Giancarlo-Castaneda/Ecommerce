@@ -15,8 +15,4 @@ extension Helper {
 
         return jsonDecoder
     }
-
-    static func makeNumberFormatter() -> NumberFormatter {
-        NumberFormatter()
-    }
 }
