@@ -4,5 +4,3 @@
 *.xcworkspacedata
 
 Ecommerce/Ecommerce.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-
-Ecommerce/Ecommerce/API/Vendors/Stubs.xcassets/.DS_Store
