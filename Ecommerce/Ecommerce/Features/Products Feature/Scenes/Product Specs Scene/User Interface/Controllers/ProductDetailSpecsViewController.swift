@@ -5,11 +5,9 @@ final class ProductDetailSpecsViewController: UIViewController {
     // MARK: - View Components
 
     private lazy var tableView = UITableView(frame: .zero, style: .insetGrouped).with {
-        $0.showsVerticalScrollIndicator = false
         $0.separatorStyle = .none
         $0.backgroundColor = .clear
         $0.registerCell(ProductSpecsHeaderCell.self)
-        $0.registerCell(UITableViewCell.self)
         $0.dataSource = self
     }
 
@@ -105,12 +103,19 @@ extension ProductDetailSpecsViewController: UITableViewDataSource {
             let viewModel = dataProvider?.viewModel(at: indexPath)
         else { fatalError("Undefined view model for indexPath \(indexPath) in file" + #file) }
 
-        let visitor = ProductSpecsTableViewCellConfiguratorVisitor(tableView: tableView, indexPath: indexPath)
+        let cell = tableView.dequeueCell(ProductSpecsHeaderCell.self, for: indexPath)
 
-        return viewModel.accept(visitor: visitor)
-    }
+        switch viewModel {
+        case let headerVM as ProductSpecHeaderViewModel:
 
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        dataProvider?.titleForHeader(inSection: section)
+            cell.selectionStyle = .none
+            cell.backgroundColor = .white
+            cell.configure(viewModel: headerVM)
+
+            return cell
+
+        default:
+            return cell
+        }
     }
 }

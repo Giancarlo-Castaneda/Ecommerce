@@ -32,7 +32,7 @@ final class ConcreteProductSpecsRouteHandler: RouteHandler {
         specsViewController.isModalInPresentation = true
 
         let customDetent = UISheetPresentationController.Detent.custom { _ in
-            return presentingViewController.view.bounds.height * 0.25
+            return presentingViewController.view.bounds.height * 0.2
         }
 
         if let sheet = specsViewController.sheetPresentationController {

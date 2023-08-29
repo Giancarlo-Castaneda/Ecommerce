@@ -2,10 +2,6 @@ import Foundation
 
 final class ConcreteProductSpecDataProvider: ProductSpecDataProvider {
 
-    // MARK: - Typealias
-
-    typealias Section = (headerTitle: String?, viewModels: [ProductSpecViewModel])
-
     // MARK: - Private Properties
 
     private lazy var sections = generateSections()
@@ -26,16 +22,11 @@ final class ConcreteProductSpecDataProvider: ProductSpecDataProvider {
 
     // MARK: - Private Methods
 
-    private func generateSections() -> [Section] {
+    private func generateSections() -> [[ProductSpecViewModel]] {
         [
-            (
-                nil,
-                [ConcreteProductSpecHeaderViewModel(detail: productDetail, numberFormatter: numberFormatter)]
-            ),
-            (
-                "About the product",
-                productDetail.attributes.map { viewModelFactory.makeProductSpecAttributeViewModel(attribute: $0) }
-            )
+            [
+                ConcreteProductSpecHeaderViewModel(detail: productDetail, numberFormatter: numberFormatter)
+            ]
         ]
     }
 
@@ -50,15 +41,7 @@ final class ConcreteProductSpecDataProvider: ProductSpecDataProvider {
             (0..<numberOfSections()) ~= section
         else { return 0 }
 
-        return sections[section].viewModels.count
-    }
-
-    func titleForHeader(inSection section: Int) -> String? {
-        guard
-            (0..<numberOfSections()) ~= section
-        else { return nil }
-
-        return sections[section].headerTitle
+        return sections[section].count
     }
 
     func viewModel(at indexPath: IndexPath) -> ProductSpecViewModel? {
@@ -67,6 +50,6 @@ final class ConcreteProductSpecDataProvider: ProductSpecDataProvider {
             (0..<numberOfRows(inSection: indexPath.section)) ~= indexPath.item
         else { return nil }
 
-        return sections[indexPath.section].viewModels[indexPath.row]
+        return sections[indexPath.section][indexPath.row]
     }
 }
