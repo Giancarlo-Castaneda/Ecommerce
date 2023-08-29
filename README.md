@@ -55,7 +55,7 @@ Use the summary field to provide succinct description of the change.
 
 The Clean Architecture software architecture was chosen because it offers numerous advantages such as modularity, flexibility, effective unit testing, and code maintainability. However, it can also present disadvantages in terms of initial complexity, it can be excessive for small teams and applicability to smaller projects due to its over-engineering.
 
-<img src="https://github.com/Giancarlo-Castaneda/Ecommerce/assets/48701589/a0f28736-31ba-46bc-84f6-ddcd5dc2b349" width="800">
+<img src="https://github.com/Giancarlo-Castaneda/Ecommerce/assets/48701589/077e5ece-17c6-4059-b00b-a8f364f13a77" width="800">
 
 ## Table of contents
 
