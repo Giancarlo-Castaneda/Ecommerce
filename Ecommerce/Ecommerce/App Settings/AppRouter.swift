@@ -14,7 +14,6 @@ final class AppRouter {
             let rootViewController = window?.rootViewController
         else {
             let navigationController = UINavigationController(nibName: nil, bundle: nil)
-            navigationController.view.tintColor = AssetsColor.purple.appColor
 
             window?.rootViewController = navigationController
             window?.makeKeyAndVisible()

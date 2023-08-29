@@ -9,8 +9,5 @@ extension AppDelegate {
 
         routeService.register(ConcreteSearchSceneRouteHandler(searchRepository: appDependency.search.searchRepository,
                                                               routeService: appDependency.routeService))
-
-        routeService.register(ConcreteProductDetailRouteHandler(productRepository: appDependency.product.productRepository,
-                                                                routeService: appDependency.routeService))
     }
 }

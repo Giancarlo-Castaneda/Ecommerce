@@ -185,12 +185,4 @@ extension SearchViewController: UICollectionViewDelegate {
             interactor?.search(query: query)
         }
     }
-
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard
-            let viewModel = dataProvider?.viewModel(at: indexPath)
-        else { fatalError("Undefined view model for indexPath \(indexPath)") }
-
-        routeService.navigate(to: ProductDetailRoute(id: viewModel.id), from: self, presentationStyle: .currentContext)
-    }
 }
