@@ -7,7 +7,7 @@ public protocol ProductDetailPresenterOutput: AnyObject {
 }
 
 public enum ProductDetailViewState {
-    case content(detail: ProductDetailModel)
+    case content
     case failure(title: String, message: String)
     case loading
 }

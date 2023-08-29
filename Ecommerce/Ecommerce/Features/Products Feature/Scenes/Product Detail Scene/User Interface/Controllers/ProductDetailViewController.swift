@@ -47,9 +47,7 @@ final class ProductDetailViewController: UIViewController {
     }
 
     private func setupConstraints() {
-        contentView.layout.topAnchor(to: view, vertical: .safeTop)
-        contentView.layout.bottomAnchor(to: view)
-        contentView.layout.fillSuperviewHorizontally()
+        contentView.layout.fillSuperview()
     }
 
     private func showAlert(title: String, message: String) {
@@ -73,8 +71,8 @@ extension ProductDetailViewController: ProductDetailPresenterOutput {
 
     func configure(state: ProductDetailViewState) {
         switch state {
-        case let .content(detail):
-            contentView.configureView(pictures: detail.pictures)
+        case .content:
+            break
 
         case let .failure(title, message):
             showAlert(title: title, message: message)

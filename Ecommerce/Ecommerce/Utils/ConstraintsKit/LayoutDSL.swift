@@ -87,13 +87,13 @@ public struct LayoutDSL {
         let dimensionAnchor: NSLayoutDimension = dimension == .height ? view.heightAnchor : view.widthAnchor
         switch relation {
         case .lessThanOrEqual:
-            return self.view.heightAnchor.constraint(lessThanOrEqualTo: dimensionAnchor, multiplier: multiplier).activate()
+            return view.heightAnchor.constraint(lessThanOrEqualTo: dimensionAnchor, multiplier: multiplier).activate()
 
         case .equal:
-            return self.view.heightAnchor.constraint(equalTo: dimensionAnchor, multiplier: multiplier).activate()
+            return view.heightAnchor.constraint(equalTo: dimensionAnchor, multiplier: multiplier).activate()
 
         case .greaterThanOrEqual:
-            return self.view.heightAnchor.constraint(greaterThanOrEqualTo: dimensionAnchor, multiplier: multiplier)
+            return view.heightAnchor.constraint(greaterThanOrEqualTo: dimensionAnchor, multiplier: multiplier)
                 .activate()
 
         @unknown default:
