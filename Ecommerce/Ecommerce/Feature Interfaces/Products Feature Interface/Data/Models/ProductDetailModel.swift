@@ -22,7 +22,7 @@ public struct ProductDetailModel {
     public let shipping: ShippingModel
     public let dateCreated: Date
     public let lastUpdated: Date
-    public let warranty: String?
+    public let warranty: String
     public let pictures: [PictureModel]
     public let attributes: [AttributeModel]
 
@@ -46,7 +46,7 @@ public struct ProductDetailModel {
                 shipping: ShippingModel,
                 dateCreated: Date,
                 lastUpdated: Date,
-                warranty: String?,
+                warranty: String,
                 pictures: [PictureModel],
                 attributes: [AttributeModel]) {
 
