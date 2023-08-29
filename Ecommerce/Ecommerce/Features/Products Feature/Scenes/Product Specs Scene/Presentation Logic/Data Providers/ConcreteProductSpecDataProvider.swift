@@ -33,7 +33,7 @@ final class ConcreteProductSpecDataProvider: ProductSpecDataProvider {
                 [ConcreteProductSpecHeaderViewModel(detail: productDetail, numberFormatter: numberFormatter)]
             ),
             (
-                "About the product",
+                L10n.Localizable.attributesSectionTitle,
                 productDetail.attributes.map { viewModelFactory.makeProductSpecAttributeViewModel(attribute: $0) }
             )
         ]

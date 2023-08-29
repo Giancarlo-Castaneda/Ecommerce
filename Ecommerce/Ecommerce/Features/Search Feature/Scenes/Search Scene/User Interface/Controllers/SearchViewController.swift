@@ -5,7 +5,7 @@ final class SearchViewController: UIViewController {
     // MARK: - View Components
 
     private lazy var searchBar = UISearchController().with {
-        $0.searchBar.placeholder = "Search a product..."
+        $0.searchBar.placeholder = L10n.Localizable.searchBarPlaceholder
         $0.searchBar.searchBarStyle = .minimal
         $0.searchResultsUpdater = self
     }
@@ -77,7 +77,7 @@ final class SearchViewController: UIViewController {
 
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default)
+        let okAction = UIAlertAction(title: L10n.Localizable.ok, style: .default)
 
         alert.addAction(okAction)
         alert.view.tintColor = view.tintColor
@@ -96,9 +96,7 @@ final class SearchViewController: UIViewController {
     }
 
     private func emptyView(show: Bool) {
-        let title = "Find your product and look for the best offer"
-        let body = "Start looking for all the products you want."
-        emptyView.configureView(title: title, body: body)
+        emptyView.configureView(title: L10n.Localizable.searchEmptyTitle, body: L10n.Localizable.searchEmptyBody)
         collectionView.backgroundView = show ? emptyView : nil
     }
 }
