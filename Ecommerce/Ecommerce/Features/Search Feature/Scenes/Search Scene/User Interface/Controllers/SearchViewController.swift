@@ -16,6 +16,7 @@ final class SearchViewController: UIViewController {
     }
 
     private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout).with {
+        $0.keyboardDismissMode = .onDrag
         $0.backgroundColor = UIColor.clear
         $0.registerCell(SearchItemCell.self)
         $0.dataSource = self
