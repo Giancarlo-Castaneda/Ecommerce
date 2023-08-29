@@ -41,11 +41,4 @@ extension Helper {
 
         PagingModel(totalResults: totalResults, primaryResults: primaryResults, offset: offset, limit: limit)
     }
-
-    static func makeRatingsModel(negative: Double = 0.0,
-                                 neutral: Double = 0.0,
-                                 positive: Double = 0.0) -> RatingsModel {
-
-        RatingsModel(negative: negative, neutral: neutral, positive: positive)
-    }
 }
