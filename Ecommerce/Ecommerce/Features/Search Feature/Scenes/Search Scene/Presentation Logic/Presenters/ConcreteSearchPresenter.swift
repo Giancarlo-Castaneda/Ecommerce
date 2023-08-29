@@ -26,7 +26,9 @@ final class ConcreteSearchPresenter: SearchInteractorOutput {
 
         await view?.configure(state: .content(dataProvider: dataProvider))
 
-        await view?.configure(state: .emptyView(show: items.isEmpty))
+        if items.isEmpty {
+            await view?.configure(state: .emptyView)
+        }
     }
 
     func error(_ error: Error) async {

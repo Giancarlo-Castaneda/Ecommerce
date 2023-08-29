@@ -118,7 +118,7 @@ extension SearchViewController: UISearchResultsUpdating {
         }
 
         pendingRequestWorkItem = requestWorkItem
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100), execute: requestWorkItem)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250), execute: requestWorkItem)
     }
 }
 
@@ -134,10 +134,11 @@ extension SearchViewController: SearchPresenterOutput {
             emptyView(show: false)
 
         case let .failure(title, message):
+            emptyView(show: true)
             showAlert(title: title, message: message)
 
-        case let .emptyView(show):
-            emptyView(show: show)
+        case .emptyView:
+            emptyView(show: true)
 
         case .loading:
             break

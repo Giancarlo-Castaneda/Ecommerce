@@ -73,7 +73,6 @@ final class ConcreteSearchInteractor: SearchInteractor {
                 isWaitingForResponse = false
             } catch {
                 await presenter?.error(error)
-                isWaitingForResponse = false
             }
         }
     }
