@@ -27,10 +27,6 @@ final class ConcreteSearchSceneRouteHandler: RouteHandler {
         let viewController = destination(of: route)
         viewController.view.tintColor = presentingViewController.view.tintColor
 
-        if let navigation = presentingViewController as? UINavigationController {
-            navigation.setViewControllers([viewController], animated: false)
-        } else {
-            presentingViewController.show(viewController, sender: nil)
-        }
+        presentingViewController.show(viewController, sender: nil)
     }
 }

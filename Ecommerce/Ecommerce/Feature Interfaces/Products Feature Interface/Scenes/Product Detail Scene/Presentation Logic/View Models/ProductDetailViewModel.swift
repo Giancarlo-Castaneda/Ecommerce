@@ -3,6 +3,7 @@ import Foundation
 protocol ProductDetailViewModel {
 
     var title: String { get }
+    var image: URL { get }
     var permalink: URL { get }
     var sellerId: Int { get }
     var condition: String { get }

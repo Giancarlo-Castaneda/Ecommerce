@@ -39,18 +39,7 @@ final class ProductDetailViewController: UIViewController {
         interactor?.fetchDetail(id: id)
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        navigationController?.delegate = self
-        showProductSpecs()
-    }
-
     // MARK: - Private Methods
-
-    private func showProductSpecs() {
-        routeService.navigate(to: ProductSpecsRoute(id: self.id), from: self, presentationStyle: .currentContext)
-    }
 
     private func setupUI() {
         view.backgroundColor = AssetsColor.screenBackground.appColor
@@ -93,22 +82,5 @@ extension ProductDetailViewController: ProductDetailPresenterOutput {
         case .loading:
             break
         }
-    }
-}
-
-// MARK: - UINavigationControllerDelegate
-
-extension ProductDetailViewController: UINavigationControllerDelegate {
-
-    func navigationController(_ navigationController: UINavigationController,
-                              animationControllerFor operation: UINavigationController.Operation,
-                              from fromVC: UIViewController,
-                              to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-
-        if operation == .pop {
-            presentedViewController?.dismiss(animated: true)
-        }
-
-        return nil
     }
 }
