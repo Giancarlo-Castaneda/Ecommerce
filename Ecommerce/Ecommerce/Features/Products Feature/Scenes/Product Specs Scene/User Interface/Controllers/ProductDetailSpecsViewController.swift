@@ -60,7 +60,7 @@ final class ProductDetailSpecsViewController: UIViewController {
 
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default)
+        let okAction = UIAlertAction(title: L10n.Localizable.ok, style: .default)
 
         alert.addAction(okAction)
         alert.view.tintColor = view.tintColor

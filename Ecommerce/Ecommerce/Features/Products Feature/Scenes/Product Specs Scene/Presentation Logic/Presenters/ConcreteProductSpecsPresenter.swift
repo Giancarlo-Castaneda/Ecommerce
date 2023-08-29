@@ -29,6 +29,6 @@ final class ConcreteProductSpecsPresenter: ProductSpecsInteractorOutput {
     }
 
     func error(_ error: Error) async {
-        await view?.configure(state: .failure(title: "Error", message: error.localizedDescription))
+        await view?.configure(state: .failure(title: L10n.Localizable.error, message: error.localizedDescription))
     }
 }

@@ -17,7 +17,7 @@ struct ConcreteSearchItemViewModel: SearchItemViewModel {
     }
 
     var price: String {
-        numberFormatter.string(from: NSNumber(floatLiteral: searchItem.price)) ?? "Price not available"
+        numberFormatter.string(from: NSNumber(floatLiteral: searchItem.price)) ?? L10n.Localizable.priceNotFoundMessage
     }
 
     var originalPrice: String? {
@@ -33,7 +33,7 @@ struct ConcreteSearchItemViewModel: SearchItemViewModel {
             let discount = original - searchItem.price
             let percentage = (discount * 100) / original
             let integerPercentage = Int(percentage)
-            return "-\(integerPercentage)%"
+            return L10n.Localizable.discountText(number: integerPercentage)
         }
         return nil
     }
