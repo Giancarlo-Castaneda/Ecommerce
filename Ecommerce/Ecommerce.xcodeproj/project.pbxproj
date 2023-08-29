@@ -40,17 +40,6 @@
 		AB89C89E2A6469DF001B5448 /* ConcreteSearchItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C89D2A6469DF001B5448 /* ConcreteSearchItemViewModelTests.swift */; };
 		AB89C8A12A646D8C001B5448 /* ConcreteSearchDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8A02A646D8C001B5448 /* ConcreteSearchDataProviderTests.swift */; };
 		AB89C8A42A647248001B5448 /* ConcreteSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8A32A647248001B5448 /* ConcreteSearchPresenter.swift */; };
-		AB89C8A62A64752B001B5448 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8A52A64752B001B5448 /* AppRouter.swift */; };
-		AB89C8A92A647561001B5448 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8A82A647561001B5448 /* AppDependency.swift */; };
-		AB89C8AE2A647590001B5448 /* AnyRouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8AC2A647590001B5448 /* AnyRouteHandler.swift */; };
-		AB89C8AF2A647590001B5448 /* ConcreteRouteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8AD2A647590001B5448 /* ConcreteRouteService.swift */; };
-		AB89C8B42A6475A1001B5448 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8B12A6475A1001B5448 /* Route.swift */; };
-		AB89C8B52A6475A1001B5448 /* RouteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8B22A6475A1001B5448 /* RouteService.swift */; };
-		AB89C8B62A6475A1001B5448 /* RouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8B32A6475A1001B5448 /* RouteHandler.swift */; };
-		AB89C8B82A6475BF001B5448 /* AppDependency+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8B72A6475BF001B5448 /* AppDependency+Search.swift */; };
-		AB89C8BB2A6477A4001B5448 /* SearchRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8BA2A6477A3001B5448 /* SearchRoute.swift */; };
-		AB89C8BE2A64783E001B5448 /* ConcreteSearchSceneRouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8BD2A64783E001B5448 /* ConcreteSearchSceneRouteHandler.swift */; };
-		AB89C8C02A647920001B5448 /* AppDelegate+ComposeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89C8BF2A647920001B5448 /* AppDelegate+ComposeRouter.swift */; };
 		ABA9A22A2A5F8CE4005D8BE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A2292A5F8CE4005D8BE0 /* AppDelegate.swift */; };
 		ABA9A22C2A5F8CE4005D8BE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A22B2A5F8CE4005D8BE0 /* SceneDelegate.swift */; };
 		ABA9A2332A5F8CE5005D8BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA9A2322A5F8CE5005D8BE0 /* Assets.xcassets */; };
@@ -167,17 +156,6 @@
 		AB89C89D2A6469DF001B5448 /* ConcreteSearchItemViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteSearchItemViewModelTests.swift; sourceTree = "<group>"; };
 		AB89C8A02A646D8C001B5448 /* ConcreteSearchDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteSearchDataProviderTests.swift; sourceTree = "<group>"; };
 		AB89C8A32A647248001B5448 /* ConcreteSearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteSearchPresenter.swift; sourceTree = "<group>"; };
-		AB89C8A52A64752B001B5448 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		AB89C8A82A647561001B5448 /* AppDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
-		AB89C8AC2A647590001B5448 /* AnyRouteHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyRouteHandler.swift; sourceTree = "<group>"; };
-		AB89C8AD2A647590001B5448 /* ConcreteRouteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteRouteService.swift; sourceTree = "<group>"; };
-		AB89C8B12A6475A1001B5448 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		AB89C8B22A6475A1001B5448 /* RouteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteService.swift; sourceTree = "<group>"; };
-		AB89C8B32A6475A1001B5448 /* RouteHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteHandler.swift; sourceTree = "<group>"; };
-		AB89C8B72A6475BF001B5448 /* AppDependency+Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDependency+Search.swift"; sourceTree = "<group>"; };
-		AB89C8BA2A6477A3001B5448 /* SearchRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRoute.swift; sourceTree = "<group>"; };
-		AB89C8BD2A64783E001B5448 /* ConcreteSearchSceneRouteHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteSearchSceneRouteHandler.swift; sourceTree = "<group>"; };
-		AB89C8BF2A647920001B5448 /* AppDelegate+ComposeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ComposeRouter.swift"; sourceTree = "<group>"; };
 		ABA9A2262A5F8CE4005D8BE0 /* Ecommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA9A2292A5F8CE4005D8BE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA9A22B2A5F8CE4005D8BE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -393,7 +371,6 @@
 			children = (
 				AB2BBABE2A62502A0022B89D /* Business Logic */,
 				AB89C86D2A6450EA001B5448 /* Presentation Logic */,
-				AB89C8B92A647795001B5448 /* Router */,
 			);
 			path = "Search Scene";
 			sourceTree = "<group>";
@@ -472,7 +449,6 @@
 			children = (
 				AB2BBACF2A6252F70022B89D /* Business Logic */,
 				AB89C8712A6451F9001B5448 /* Presentation Logic */,
-				AB89C8BC2A64782E001B5448 /* Router */,
 			);
 			path = "Search Scene";
 			sourceTree = "<group>";
@@ -689,59 +665,6 @@
 			path = Presenters;
 			sourceTree = "<group>";
 		};
-		AB89C8A72A647552001B5448 /* App Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				AB89C8A82A647561001B5448 /* AppDependency.swift */,
-				AB89C8B72A6475BF001B5448 /* AppDependency+Search.swift */,
-			);
-			path = "App Dependencies";
-			sourceTree = "<group>";
-		};
-		AB89C8AA2A647576001B5448 /* Router Service */ = {
-			isa = PBXGroup;
-			children = (
-				AB89C8AB2A647587001B5448 /* Service */,
-				AB89C8B02A647593001B5448 /* Service Interface */,
-			);
-			path = "Router Service";
-			sourceTree = "<group>";
-		};
-		AB89C8AB2A647587001B5448 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				AB89C8AC2A647590001B5448 /* AnyRouteHandler.swift */,
-				AB89C8AD2A647590001B5448 /* ConcreteRouteService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		AB89C8B02A647593001B5448 /* Service Interface */ = {
-			isa = PBXGroup;
-			children = (
-				AB89C8B12A6475A1001B5448 /* Route.swift */,
-				AB89C8B32A6475A1001B5448 /* RouteHandler.swift */,
-				AB89C8B22A6475A1001B5448 /* RouteService.swift */,
-			);
-			path = "Service Interface";
-			sourceTree = "<group>";
-		};
-		AB89C8B92A647795001B5448 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				AB89C8BA2A6477A3001B5448 /* SearchRoute.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		AB89C8BC2A64782E001B5448 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				AB89C8BD2A64783E001B5448 /* ConcreteSearchSceneRouteHandler.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		ABA9A21D2A5F8CE4005D8BE0 = {
 			isa = PBXGroup;
 			children = (
@@ -763,16 +686,15 @@
 		ABA9A2282A5F8CE4005D8BE0 /* Ecommerce */ = {
 			isa = PBXGroup;
 			children = (
-				ABA9A2EC2A624014005D8BE0 /* ViewController.swift */,
 				ABA9A2742A5F9CE5005D8BE0 /* API */,
-				ABA9A2592A5F8E35005D8BE0 /* App Settings */,
+				ABA9A2592A5F8E35005D8BE0 /* AppDelegate */,
 				ABA9A28F2A6226FF005D8BE0 /* Common */,
 				ABA9A2932A62273A005D8BE0 /* Feature Interfaces */,
 				ABA9A2C52A62368B005D8BE0 /* Features */,
 				ABA9A25B2A5F8F5A005D8BE0 /* Networking */,
 				ABA9A25A2A5F8E48005D8BE0 /* Resources */,
-				AB89C8AA2A647576001B5448 /* Router Service */,
 				ABA9A26B2A5F9274005D8BE0 /* Utils */,
+				ABA9A2EC2A624014005D8BE0 /* ViewController.swift */,
 			);
 			path = Ecommerce;
 			sourceTree = "<group>";
@@ -790,16 +712,13 @@
 			path = EcommerceTests;
 			sourceTree = "<group>";
 		};
-		ABA9A2592A5F8E35005D8BE0 /* App Settings */ = {
+		ABA9A2592A5F8E35005D8BE0 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				ABA9A2292A5F8CE4005D8BE0 /* AppDelegate.swift */,
-				AB89C8BF2A647920001B5448 /* AppDelegate+ComposeRouter.swift */,
-				AB89C8A52A64752B001B5448 /* AppRouter.swift */,
 				ABA9A22B2A5F8CE4005D8BE0 /* SceneDelegate.swift */,
-				AB89C8A72A647552001B5448 /* App Dependencies */,
 			);
-			path = "App Settings";
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		ABA9A25A2A5F8E48005D8BE0 /* Resources */ = {
@@ -1278,7 +1197,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB89C8BE2A64783E001B5448 /* ConcreteSearchSceneRouteHandler.swift in Sources */,
 				AB2BBAAF2A624C710022B89D /* SearchFetchWorker.swift in Sources */,
 				ABA9A2642A5F8F6E005D8BE0 /* RequestError.swift in Sources */,
 				AB89C88A2A645D54001B5448 /* SearchDataProviderFactory.swift in Sources */,
@@ -1288,8 +1206,6 @@
 				ABA9A2D52A623A01005D8BE0 /* MetricDetailModel+SearchDTO.swift in Sources */,
 				ABA9A2782A5F9D67005D8BE0 /* EcommerceAPI+Search.swift in Sources */,
 				ABA9A2722A5F92B5005D8BE0 /* Data+prettyPrintedJSONString.swift in Sources */,
-				AB89C8B52A6475A1001B5448 /* RouteService.swift in Sources */,
-				AB89C8B62A6475A1001B5448 /* RouteHandler.swift in Sources */,
 				ABA9A29D2A62294E005D8BE0 /* PagingModel.swift in Sources */,
 				ABA9A2B02A622DB5005D8BE0 /* SellerReputationModel.swift in Sources */,
 				ABA9A2762A5F9D01005D8BE0 /* EcommerceAPI.swift in Sources */,
@@ -1314,9 +1230,6 @@
 				ABA9A2C42A6235E6005D8BE0 /* SearchRepository.swift in Sources */,
 				ABA9A2E52A623E3B005D8BE0 /* SellerAddressModel+SearchDTO.swift in Sources */,
 				AB89C89A2A646318001B5448 /* ConcreteSearchItemViewModel.swift in Sources */,
-				AB89C8C02A647920001B5448 /* AppDelegate+ComposeRouter.swift in Sources */,
-				AB89C8B82A6475BF001B5448 /* AppDependency+Search.swift in Sources */,
-				AB89C8B42A6475A1001B5448 /* Route.swift in Sources */,
 				ABA9A2A42A622BDB005D8BE0 /* ListingKind.swift in Sources */,
 				ABA9A2A22A622BB2005D8BE0 /* BuyingKind.swift in Sources */,
 				AB2BBAC12A62503F0022B89D /* SearchInteractor.swift in Sources */,
@@ -1325,13 +1238,10 @@
 				ABA9A2612A5F8F6E005D8BE0 /* ConcreteNetworkingProvider.swift in Sources */,
 				ABA9A2B62A622EDA005D8BE0 /* SellerPowerKind.swift in Sources */,
 				ABA9A2AE2A622D5B005D8BE0 /* AddressModel.swift in Sources */,
-				AB89C8BB2A6477A4001B5448 /* SearchRoute.swift in Sources */,
 				ABA9A2622A5F8F6E005D8BE0 /* NetworkingProvider.swift in Sources */,
 				ABA9A2DB2A623AE8005D8BE0 /* TransactionsModel+SearchDTO.swift in Sources */,
 				ABA9A2732A5F92B5005D8BE0 /* Dictionary+prettyPrintedJSONString.swift in Sources */,
 				AB89C8742A64523F001B5448 /* ConcreteSearchPresenter.swift in Sources */,
-				AB89C8AF2A647590001B5448 /* ConcreteRouteService.swift in Sources */,
-				AB89C8AE2A647590001B5448 /* AnyRouteHandler.swift in Sources */,
 				ABA9A22C2A5F8CE4005D8BE0 /* SceneDelegate.swift in Sources */,
 				AB89C89C2A64696D001B5448 /* ConcreteSearchItemViewModelFactory.swift in Sources */,
 				ABA9A2BC2A623061005D8BE0 /* RatingsModel.swift in Sources */,
@@ -1349,8 +1259,6 @@
 				ABA9A2B82A622FF4005D8BE0 /* MetricsModel.swift in Sources */,
 				ABA9A29F2A622B55005D8BE0 /* SearchItemModel.swift in Sources */,
 				AB89C8942A645F7C001B5448 /* ConcreteSearchDataProvider.swift in Sources */,
-				AB89C8A62A64752B001B5448 /* AppRouter.swift in Sources */,
-				AB89C8A92A647561001B5448 /* AppDependency.swift in Sources */,
 				AB89C86F2A64513C001B5448 /* SearchPresenterOutput.swift in Sources */,
 				ABA9A2AC2A622CDA005D8BE0 /* SellerAddressModel.swift in Sources */,
 				ABA9A2D92A623A7C005D8BE0 /* RatingsModel+SearchDTO.swift in Sources */,
