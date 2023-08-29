@@ -49,7 +49,7 @@ final class ConcreteSearchItemViewModelTests: XCTestCase {
         XCTAssertEqual(sut.imageURL.absoluteString, "foo.image.com")
         XCTAssertEqual(sut.price, "1 111,11 ARS")
         XCTAssertEqual(sut.originalPrice, "2 222,22 ARS")
-        XCTAssertEqual(sut.discount, "-50%")
+        XCTAssertEqual(sut.discount, "50%")
         XCTAssertTrue(sut.freeShipping)
     }
 }

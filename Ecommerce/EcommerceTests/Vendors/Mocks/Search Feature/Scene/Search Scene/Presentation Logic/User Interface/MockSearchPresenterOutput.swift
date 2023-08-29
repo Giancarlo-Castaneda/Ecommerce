@@ -7,7 +7,6 @@ final class MockSearchPresenterOutput: SearchPresenterOutput, Mockable {
     // MARK: - Invocation
 
     enum Invocation {
-        case configureWithEmptyView
         case configureWithContent
         case configureWithFailure
         case configureWithLoading
@@ -26,9 +25,6 @@ final class MockSearchPresenterOutput: SearchPresenterOutput, Mockable {
         receivedState = state
 
         switch state {
-        case .emptyView:
-            append(.configureWithEmptyView)
-
         case let .content(dataProvider):
             append(.configureWithContent)
             receivedDataProvider = dataProvider

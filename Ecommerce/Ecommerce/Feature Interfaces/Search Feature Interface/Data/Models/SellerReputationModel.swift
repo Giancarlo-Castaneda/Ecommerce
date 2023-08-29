@@ -5,14 +5,14 @@ public struct SellerReputationModel {
     // MARK: - Public Properties
 
     public let sellerLevelKind: SellerLevelKind
-    public let sellerPowerKind: SellerPowerKind?
+    public let sellerPowerKind: SellerPowerKind
     public let transaction: TransactionsModel
     public let metric: MetricsModel
 
     // MARK: - Initialization
 
     public init(sellerLevelKind: SellerLevelKind,
-                sellerPowerKind: SellerPowerKind?,
+                sellerPowerKind: SellerPowerKind,
                 transaction: TransactionsModel,
                 metric: MetricsModel) {
 
