@@ -19,9 +19,6 @@
 		ABA9A2652A5F8F6E005D8BE0 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A2602A5F8F6E005D8BE0 /* RequestType.swift */; };
 		ABA9A2692A5F9020005D8BE0 /* RequestErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A2672A5F9020005D8BE0 /* RequestErrorTests.swift */; };
 		ABA9A26A2A5F9020005D8BE0 /* HTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A2682A5F9020005D8BE0 /* HTTPMethodTests.swift */; };
-		ABA9A26E2A5F928A005D8BE0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A26D2A5F928A005D8BE0 /* Logger.swift */; };
-		ABA9A2722A5F92B5005D8BE0 /* Data+prettyPrintedJSONString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A2702A5F92B5005D8BE0 /* Data+prettyPrintedJSONString.swift */; };
-		ABA9A2732A5F92B5005D8BE0 /* Dictionary+prettyPrintedJSONString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA9A2712A5F92B5005D8BE0 /* Dictionary+prettyPrintedJSONString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +47,6 @@
 		ABA9A2602A5F8F6E005D8BE0 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		ABA9A2672A5F9020005D8BE0 /* RequestErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestErrorTests.swift; sourceTree = "<group>"; };
 		ABA9A2682A5F9020005D8BE0 /* HTTPMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethodTests.swift; sourceTree = "<group>"; };
-		ABA9A26D2A5F928A005D8BE0 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		ABA9A2702A5F92B5005D8BE0 /* Data+prettyPrintedJSONString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+prettyPrintedJSONString.swift"; sourceTree = "<group>"; };
-		ABA9A2712A5F92B5005D8BE0 /* Dictionary+prettyPrintedJSONString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+prettyPrintedJSONString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +91,6 @@
 				ABA9A2592A5F8E35005D8BE0 /* AppDelegate */,
 				ABA9A25B2A5F8F5A005D8BE0 /* Networking */,
 				ABA9A25A2A5F8E48005D8BE0 /* Resources */,
-				ABA9A26B2A5F9274005D8BE0 /* Utils */,
 				ABA9A22D2A5F8CE4005D8BE0 /* ViewController.swift */,
 			);
 			path = Ecommerce;
@@ -149,32 +142,6 @@
 				ABA9A2672A5F9020005D8BE0 /* RequestErrorTests.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		ABA9A26B2A5F9274005D8BE0 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				ABA9A26F2A5F92A3005D8BE0 /* Extensions */,
-				ABA9A26C2A5F9277005D8BE0 /* Logger */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		ABA9A26C2A5F9277005D8BE0 /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				ABA9A26D2A5F928A005D8BE0 /* Logger.swift */,
-			);
-			path = Logger;
-			sourceTree = "<group>";
-		};
-		ABA9A26F2A5F92A3005D8BE0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				ABA9A2702A5F92B5005D8BE0 /* Data+prettyPrintedJSONString.swift */,
-				ABA9A2712A5F92B5005D8BE0 /* Dictionary+prettyPrintedJSONString.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,14 +244,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA9A2642A5F8F6E005D8BE0 /* RequestError.swift in Sources */,
-				ABA9A2722A5F92B5005D8BE0 /* Data+prettyPrintedJSONString.swift in Sources */,
 				ABA9A22E2A5F8CE4005D8BE0 /* ViewController.swift in Sources */,
 				ABA9A22A2A5F8CE4005D8BE0 /* AppDelegate.swift in Sources */,
 				ABA9A2632A5F8F6E005D8BE0 /* HTTPMethod.swift in Sources */,
-				ABA9A26E2A5F928A005D8BE0 /* Logger.swift in Sources */,
 				ABA9A2612A5F8F6E005D8BE0 /* ConcreteNetworkingProvider.swift in Sources */,
 				ABA9A2622A5F8F6E005D8BE0 /* NetworkingProvider.swift in Sources */,
-				ABA9A2732A5F92B5005D8BE0 /* Dictionary+prettyPrintedJSONString.swift in Sources */,
 				ABA9A22C2A5F8CE4005D8BE0 /* SceneDelegate.swift in Sources */,
 				ABA9A2652A5F8F6E005D8BE0 /* RequestType.swift in Sources */,
 			);

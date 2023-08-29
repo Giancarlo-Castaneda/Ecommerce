@@ -47,8 +47,6 @@ final class ConcreteNetworkingProvider: NetworkingProvider {
                 let response = response as? HTTPURLResponse
             else { throw RequestError.noResponse }
 
-            Logger.logResponse(response, from: request, data: data)
-
             switch response.statusCode {
             case 200...299:
                 return data
@@ -71,13 +69,13 @@ final class ConcreteNetworkingProvider: NetworkingProvider {
 
     func sendRequest(endpoint: RequestType) async throws {
         let request = try createRequest(endpoint: endpoint)
-        Logger.logRequest(request, with: endpoint)
+
         _ = try await launchTask(request: request)
     }
 
     func sendRequest<T: Decodable>(endpoint: RequestType, responseModel: T.Type) async throws -> T {
         let request = try createRequest(endpoint: endpoint)
-        Logger.logRequest(request, with: endpoint)
+
         let data = try await launchTask(request: request)
 
         do {
