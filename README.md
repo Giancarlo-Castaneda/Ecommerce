@@ -2,6 +2,8 @@
 
 Ecommerce iOS app repository using the free API provided by MercadoLibre, you can refer to the [Documentation](https://developers.mercadolibre.com.ar/es_ar/items-y-busquedas)
 
+To launch the application, you just need to let SPM load the dependencies to run the application.
+
 # Demo
 
 |Video|
