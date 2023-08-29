@@ -12,7 +12,7 @@ final class SearchItemCell: UICollectionViewCell {
     }
 
     private lazy var imageView = UIImageView().with {
-        $0.contentMode = .scaleAspectFit
+        $0.contentMode = .scaleAspectFill
         $0.layer.cornerRadius = LayoutConstant.cornerRadius
     }
 
@@ -46,7 +46,6 @@ final class SearchItemCell: UICollectionViewCell {
     }
 
     private lazy var freeShippingLabel = PaddingLabel().with {
-        $0.text = L10n.Localizable.searchItemFreeTag
         $0.textColor = AssetsColor.greenAccent.appColor
         $0.backgroundColor = .white.withAlphaComponent(0.8)
         $0.font = UIFont.preferredFont(forTextStyle: .caption1)
@@ -134,6 +133,7 @@ final class SearchItemCell: UICollectionViewCell {
         priceLabel.text = item.price
         discountLabel.text = item.discount
         discountView.isHidden = item.discount == nil
+        freeShippingLabel.text = "• Free Delivery"
         freeShippingLabel.isHidden = !item.freeShipping
         originalPriceLabel.isHidden = item.originalPrice == nil
         loadImage(url: item.imageURL, imageView: imageView)

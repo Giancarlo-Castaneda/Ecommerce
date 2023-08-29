@@ -9,7 +9,7 @@ struct ConcreteProductSpecHeaderViewModel: ProductSpecHeaderViewModel {
     }
 
     var price: String {
-        numberFormatter.string(from: NSNumber(floatLiteral: detail.price)) ?? L10n.Localizable.priceNotFoundMessage
+        numberFormatter.string(from: NSNumber(floatLiteral: detail.price)) ?? "Price not available"
     }
 
     var originalPrice: String? {
